@@ -8,9 +8,11 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
+    "noImplicitAny": false,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "typeRoots" : [
+      "./typings",
       "node_modules/@types/",
     ],
     "strict": true,
