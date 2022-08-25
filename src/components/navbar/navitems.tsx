@@ -38,17 +38,21 @@ export function NavItems() {
 
   return (
     <ListContainer>
-     <NavItem className={hoverSize}>
-     {state ? <a href="#">ABOUT ME</a> : ""}
+      <NavItem className={hoverSize}>
+        {state ? <a href="#">ABOUT ME</a> : ""}
       </NavItem>
       <NavItem className={hoverSize}>
-      {state ? <a href="#" >PROJECTS</a> : ""}
+        {state ? <a href="#">PROJECTS</a> : ""}
       </NavItem>
       <NavItem className={hoverSize}>
-      {state ? <a href="#" >CONTACT</a> : ""}
+        {state ? <a href="#">CONTACT</a> : ""}
       </NavItem>
       <NavItem>
-        <a href="#" onClick={handleClick} className=" text-theme-blue hover:text-theme-darkblue">
+        <a
+          href="#"
+          onClick={handleClick}
+          className=" text-theme-blue hover:text-theme-darkblue"
+        >
           NAV
         </a>
       </NavItem>
