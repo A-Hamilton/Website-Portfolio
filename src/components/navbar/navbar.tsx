@@ -5,8 +5,8 @@ import { NavItems } from "./navitems";
 import { Logo } from "./logo";
 
 const NavContainer = styled.div`
-min-height: 68px;
-    ${tw`
+  ${tw`
+      min-h-[68px]
       flex
       flex-row
       w-full
@@ -18,11 +18,13 @@ min-height: 68px;
 
 const LogoContainer = styled.div``;
 
-export function NavBar(){
-    return <NavContainer>
+export function NavBar() {
+  return (
+    <NavContainer>
       <LogoContainer>
-        <Logo/>
+        <Logo />
       </LogoContainer>
-      <NavItems/>
+      <NavItems />
     </NavContainer>
+  );
 }

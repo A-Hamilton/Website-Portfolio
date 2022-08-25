@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import PageContainer from "../PageContainer";
@@ -152,7 +151,7 @@ export function AboutMeSection() {
         </RightContainer>
         <LeftContainer>
           <ImageContainer>
-            <Image src={undrawImage}/>
+            <Image src={undrawImage} />
           </ImageContainer>
         </LeftContainer>
       </AboutMeContainer>

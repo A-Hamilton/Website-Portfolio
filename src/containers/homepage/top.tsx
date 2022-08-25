@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 // @ts-ignore
@@ -146,15 +146,17 @@ const LogoImage = styled.img`
 export function TopSection() {
   const [fade, SetFade] = useState("opacity-0");
 
-    const handleFadeEffect = () => {
-        SetFade("opacity-100");
-    }
+  const handleFadeEffect = () => {
+    SetFade("opacity-100");
+  };
 
   const handleClick = (entry: number) => {
-    if(entry === 1) window.open("https://github.com/A-Hamilton")
-    if(entry === 2) window.open("https://www.linkedin.com/in/adam-hamilton-5a650b187/")
-    if(entry === 3) navigator.clipboard.writeText("adamhamiltonbusiness@outlook.com")
-  }
+    if (entry === 1) window.open("https://github.com/A-Hamilton");
+    if (entry === 2)
+      window.open("https://www.linkedin.com/in/adam-hamilton-5a650b187/");
+    if (entry === 3)
+      navigator.clipboard.writeText("adamhamiltonbusiness@outlook.com");
+  };
   return (
     <TopSectionContainer onLoad={handleFadeEffect}>
       <LeftContainer className={fade}>
@@ -163,10 +165,10 @@ export function TopSection() {
           <KeyWord className="text-theme-blue">Adam</KeyWord>
         </IntroText>
         <DescriptionContainer>
-        <Description>
-          I'm a <KeyWord>Software Engineer</KeyWord> from Belfast, Northern
-          Ireland.
-        </Description>
+          <Description>
+            I'm a <KeyWord>Software Engineer</KeyWord> from Belfast, Northern
+            Ireland.
+          </Description>
         </DescriptionContainer>
         <ButtonContainer>
           <Button className="mr-1 text-theme-blue border-theme-blue text-theme-blue ">
@@ -177,9 +179,21 @@ export function TopSection() {
           </Button>
         </ButtonContainer>
         <LogoContainer>
-          <LogoImage className="hover:scale-110" onClick={() => handleClick(1)} src={githubLogo}/>
-          <LogoImage className="hover:scale-110 mx-1" onClick={() => handleClick(2)} src={linkedinLogo} />
-          <LogoImage className="hover:scale-110" onClick={() => handleClick(3)} src={emailLogo} />
+          <LogoImage
+            className="hover:scale-110"
+            onClick={() => handleClick(1)}
+            src={githubLogo}
+          />
+          <LogoImage
+            className="hover:scale-110 mx-1"
+            onClick={() => handleClick(2)}
+            src={linkedinLogo}
+          />
+          <LogoImage
+            className="hover:scale-110"
+            onClick={() => handleClick(3)}
+            src={emailLogo}
+          />
         </LogoContainer>
       </LeftContainer>
       <RightContainer className={fade}>

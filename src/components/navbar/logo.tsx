@@ -9,21 +9,16 @@ const LogoContainer = styled.div`
   ${tw`
       flex
       items-center
-    
     `};
 `;
 
 const Image = styled.div`
-  width: auto;
   ${tw`
+  w-auto
   h-6
   md:h-9
+  h-full
   `};
-
-  img {
-    width: auto;
-    height: 100%;
-  }
 `;
 
 export function Logo() {

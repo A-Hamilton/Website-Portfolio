@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import PageContainer from "../PageContainer";
@@ -143,21 +142,18 @@ const GitHubButton = styled.button`
     `};
 `;
 
-
 export function ProjectSection() {
   const hoverSize = "hover:scale-105";
   return (
     <PageContainer className="rounded-tl-[20%] rounded-br-[40%] bg-white">
       <ProjectContainer>
-        <ProjectTitle >PROJECTS</ProjectTitle>
-        <PortfolioContainer >
+        <ProjectTitle>PROJECTS</ProjectTitle>
+        <PortfolioContainer>
           <PortfolioTitleContainer>
-            <PortfolioTitle>
-              Portfolio
-            </PortfolioTitle>
+            <PortfolioTitle>Portfolio</PortfolioTitle>
           </PortfolioTitleContainer>
           <PortfolioTitleContainer>
-          <ProjectContributors>SOLO PROJECT</ProjectContributors>
+            <ProjectContributors>SOLO PROJECT</ProjectContributors>
           </PortfolioTitleContainer>
           <StacksUsedContainer>
             <StacksUsed className={hoverSize}>React</StacksUsed>
